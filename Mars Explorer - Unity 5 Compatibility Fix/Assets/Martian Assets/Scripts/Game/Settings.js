@@ -1587,10 +1587,7 @@ function updatePrefs() {
 		Network.sendRate = 20;
 	}
 	else */
-	if (networkPhysics != Game.Settings.networkPhysics) {
-		Debug.Log("null");
-	}
-	if(Game.Settings.networkPhysics == 2) {
+	if(Game.Settings.networkPhysics != null && Game.Settings.networkPhysics == 2) {
 		Network.sendRate = 10;
 	}
 	else {
