@@ -74,7 +74,6 @@ private var dedicatedPort : int;
 private var dedicatedNAT : boolean;
 private var dedicatedHostAttempts : int;
 
-private var showAds : boolean = false;
 var gameAds : adDesc[];
 class adDesc extends System.Object {
     var url : String = "";
@@ -135,7 +134,6 @@ function Start () {
 
 			if(val[0] == "v" && float.Parse(val[1], System.Globalization.CultureInfo.InvariantCulture.NumberFormat) > parseFloat(GameData.gameVersion)) outdated = val[1];
 			else if(val[0] == "d") hostDedicated = (val[1] == "1" || val[1] == "true");
-			else if(val[0] == "a") showAds = (val[1] == "1" || val[1] == "true");
 			else if(val[0] == "m") msgs.Add(val[1]);
 			else if(val[0] == "w") {
 				var nme = "";
@@ -193,39 +191,6 @@ function Start () {
 	messages = msgs.ToBuiltin(String);
 
 	MasterServer.RequestHostList(gameName);
-
-	if(showAds) {
-		var ads : Array = new Array();
-
-		//Adbrite
-		www = new WWW(adBrightUrl);
-		yield www;
-		if(!www.error) {
-			var matches : System.Text.RegularExpressions.MatchCollection = System.Text.RegularExpressions.Regex.Matches(www.text.Replace("\\\"", "\""), "<a[^>]*?class=\\\"adHeadline\\\"[^>]*?href=\\\"(.*?)\\\"[^>]*?>(.*?)</a>[^.]*?<a[^>]*?class=\\\"adText\\\"[^>]*?>(.*?)</a>");
-			for(var match : System.Text.RegularExpressions.Match in matches) {
-				var ad : adDesc = new adDesc(match.Groups[1].ToString(), htmlDecode(match.Groups[2].ToString()), htmlDecode(match.Groups[3].ToString()));
-				if(Random.value > .5) ads.Add(ad);
-				else ads.Unshift(ad);
-			}
-		}
-
-		//Adsense
-		www = new WWW(adSenseUrl);
-		yield www;
-		if(!www.error) {
-			matches = System.Text.RegularExpressions.Regex.Matches(www.text.Replace("\\\"", "\""), "<a[^>]*?class=adt[^>]*?href=\\\"(.*?)\\\"[^>]*?>(.*?)</a>[^.]*?<div[^>]*?class=adb[^>]*?>(.*?)</div>");
-			for(var match : System.Text.RegularExpressions.Match in matches) {
-				ad = new adDesc("http://googleads.g.doubleclick.net" + match.Groups[1].ToString(), htmlDecode(match.Groups[2].ToString()), htmlDecode(match.Groups[3].ToString()));
-				if(ad.url.IndexOf("&nh=1") == -1) ad.url += "&nh=1";
-				ads.Unshift(ad);
-			}
-		}
-
-		//Tally
-		if(ads.length > 0) {
-			gameAds = ads.ToBuiltin(adDesc);
-		}
-	}
 }
 
 function OnFailedToConnectToMasterServer(info: NetworkConnectionError) {
@@ -701,20 +666,6 @@ function MakeWindow (id : int) {
 		var adTicker : int = 0;
 		for (var element in data) {
 
-			//Ads
-			if(showAds) {
-				adCounter += (parseFloat(gameAds.length) / data.length);
-				if(adTicker < adCounter && adTicker < gameAds.length) {
-					if(GUILayout.Button(gameAds[adTicker].title + "   ~   " + gameAds[adTicker].desc, "lobbyAd")) {
-						OpenURL(gameAds[adTicker].url);
-					}
-					if(Event.current.type != EventType.Layout && mouseInServerList && GUILayoutUtility.GetLastRect().Contains(Event.current.mousePosition)) {
-						serverDetails = "This advertisement helps bring Mars Explorer to you for free!\n\nIf you are interested in one of our sponsor's offers,\nplease be sure to check it out.";
-					}
-					adTicker++;
-				}
-			}
-
 			masterServerConFailures = 0;
 			masterServerMessage = "";
 			hostInfo = "";
@@ -784,16 +735,6 @@ function MakeWindow (id : int) {
 				serverDetails = (element.connectedPlayers > 0 ? element.connectedPlayers.ToString() : "") + (serverPlayers ? " Players: " + serverPlayers.Replace(",", ", ") : "") + (serverLag != "" ? "\nAvg Ping: " + serverLag + " ms" : "") + "\n" + element.ip[0] + ":" + element.port + (element.useNat ? " NAT" : "") + (serverVersion != 0.0 ? " (» Dedicated Host Server)" : ""); //+ element.comment;// /*+ "\n" + hostInfo/* + " " + serverWorldURL*/;
 			}
 			i++;
-
-			//"Advertise Here" Ad
-			if(showAds && i == data.length) {
-				if(GUILayout.Button("» Advertise on Mars Explorer! «", "lobbyAd")) {
-					OpenURL("http://www.adbrite.com/mb/commerce/purchase_form.php?opid=1509409&&nr=1");
-				}
-				if(Event.current.type != EventType.Layout && mouseInServerList && GUILayoutUtility.GetLastRect().Contains(Event.current.mousePosition)) {
-					serverDetails = "That's right - you can bid directly to advertise inside Mars Explorer!\n\nPresent YOUR message to an audience\nof friendly Martians everywhere.";
-				}
-			}
 		}
 		}
 		if(activePlayersVisible == 0) {
@@ -1040,20 +981,12 @@ function getRemoteIP() {
 function OpenURL(url : String) {
 	//Exit Fullscreen
 	if(Screen.fullScreen) {
-		if(Application.platform == RuntimePlatform.WindowsWebPlayer || Application.platform == RuntimePlatform.OSXWebPlayer || Application.platform == RuntimePlatform.OSXDashboardPlayer) {
-			Screen.fullScreen = false;
-		}
-		else {
-			resolution = Screen.resolutions[Screen.resolutions.length - 2];
-			Screen.SetResolution (resolution.width, resolution.height, false);
-		}
+		resolution = Screen.resolutions[Screen.resolutions.length - 2];
+		Screen.SetResolution (resolution.width, resolution.height, false);
 	}
 
 	//Open URL
-	if(Application.platform == RuntimePlatform.OSXWebPlayer || Application.platform == RuntimePlatform.WindowsWebPlayer) {
-		Application.ExternalEval("var confirmPopup = window.open('" + url + "', '_blank', 'width=' + screen.availWidth + ', height=' + screen.availHeight + ',toolbar=yes,location=yes,directories=yes,status=yes,menubar=yes,scrollbars=yes,copyhistory=no,resizable=yes'); if(!confirmPopup) { if(!confirm('I\\'m Sorry: Your browser blocked the window I attempted to open for you. Please instruct your browser to allow popups and click the link again, or hit \"Cancel\" - and I\\'ll redirect you from Mars Explorer to your intended destination automatically.')) { window.location = '" + url + "'; } }");
-	}
-	else Application.OpenURL(url);
+	Application.OpenURL(url);
 }
 
 function htmlDecode(str : String) {

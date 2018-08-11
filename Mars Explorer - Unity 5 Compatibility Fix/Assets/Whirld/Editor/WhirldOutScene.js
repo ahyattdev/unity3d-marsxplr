@@ -16,7 +16,7 @@ class WhirldOutScene extends System.Object {
 	function Save() {
 		
 		//Build Whirld!
-		BuildPipeline.BuildPlayer(["Assets/Whirld/World.unity"], outPath + "Whirld.unity3d", BuildTarget.WebPlayer, BuildOptions.BuildAdditionalStreamedScenes);	
+		BuildPipeline.BuildPlayer(["Assets/Whirld/World.unity"], outPath + "Whirld.unity3d", EditorUserBuildSettings.activeBuildTarget, BuildOptions.BuildAdditionalStreamedScenes);	
 		
 		return true;
 		

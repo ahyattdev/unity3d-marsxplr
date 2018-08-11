@@ -1586,7 +1586,11 @@ function updatePrefs() {
 	/*if(Game.Settings.networkPhysics == 1) {
 		Network.sendRate = 20;
 	}
-	else */if(Game.Settings.networkPhysics == 2) {
+	else */
+	if (networkPhysics != Game.Settings.networkPhysics) {
+		Debug.Log("null");
+	}
+	if(Game.Settings.networkPhysics == 2) {
 		Network.sendRate = 10;
 	}
 	else {
@@ -1845,19 +1849,10 @@ function toggleFullscreen() {
 	var resolution = Screen.resolutions[Screen.resolutions.length - 1];
 	if(!Screen.fullScreen) {
 		Screen.SetResolution (resolution.width, resolution.height, true);
-		if(/*Application.platform == RuntimePlatform.WindowsWebPlayer || Application.platform == RuntimePlatform.OSXWebPlayer || */Application.platform == RuntimePlatform.OSXDashboardPlayer) {
-			enteredfullscreen = true;
-			//simplified = true;
-		}
 	}
 	else {
-		if(Application.platform == RuntimePlatform.WindowsWebPlayer || Application.platform == RuntimePlatform.OSXWebPlayer || Application.platform == RuntimePlatform.OSXDashboardPlayer) {
-			Screen.fullScreen = false;
-		}
-		else {
-			resolution = Screen.resolutions[Screen.resolutions.length - 2];
-			Screen.SetResolution (resolution.width, resolution.height, false);
-		}
+		resolution = Screen.resolutions[Screen.resolutions.length - 2];
+		Screen.SetResolution (resolution.width, resolution.height, false);
 		if(enteredfullscreen) {
 			enteredfullscreen = false;
 			//simplified = false;

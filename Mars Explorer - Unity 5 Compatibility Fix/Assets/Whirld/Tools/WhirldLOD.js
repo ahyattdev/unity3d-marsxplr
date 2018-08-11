@@ -4,9 +4,10 @@ var lodLevMax : int = 0;
 @HideInInspector
 var level : int = 0;
 private var lastLevel : int = -1;
-private var lodCheck : float = Random.Range(30, 60) / 10;
+private var lodCheck : float;
 
 function Start () {
+	lodCheck = Random.Range(30, 60) / 10;
 	InvokeRepeating("SetLOD", 0, lodCheck);
 }
 

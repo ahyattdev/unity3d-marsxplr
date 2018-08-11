@@ -559,7 +559,7 @@ class WhirldIn extends System.Object {
 				mshObj.transform.parent = whirldBuffer.transform;
 			}
 		}
-		msh.Optimize();
+		;
 
 		threads.Remove(thread);
 

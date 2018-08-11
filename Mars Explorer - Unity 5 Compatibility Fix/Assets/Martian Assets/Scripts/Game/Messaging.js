@@ -62,7 +62,7 @@ function ChatWindow (id : int) {
 	
 	GUILayout.FlexibleSpace ();
 	
-	if (Event.current.type == EventType.keyDown && Event.current.character == "\n" && inputField.Length > 0) {
+	if (Event.current.type == EventType.KeyDown && Event.current.character == "\n" && inputField.Length > 0) {
 		if(inputField == "x" || inputField == "/x" || inputField == "/X") {
 			if(Game.Settings.zorbSpeed != 0) {
 				Game.Player.GetComponent.<NetworkView>().RPC("sZ", RPCMode.All, !Game.PlayerVeh.zorbBall);

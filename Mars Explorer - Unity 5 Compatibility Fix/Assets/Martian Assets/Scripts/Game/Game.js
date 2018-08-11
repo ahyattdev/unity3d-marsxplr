@@ -378,7 +378,13 @@ function OnGUI() {
 	//Cursor Locking
 	if(CursorLockMode.Locked) {
 		GUI.depth = -999;
-		GUI.Label(Rect (Screen.width / 2 - cursorOffset.x, Screen.height / 2 - cursorOffset.y, cursor.width, cursor.height), (Game.Settings.lasersAllowed && Game.Settings.firepower[PlayerVeh.vehId] > 0 ? cursor : cursorLook));
+		if (Game.Settings.lasersAllowed == null) {
+			Debug.log("this one");
+		}
+		if (PlayerVeh !=null) {
+			GUI.Label(Rect (Screen.width / 2 - cursorOffset.x, Screen.height / 2 - cursorOffset.y, cursor.width, cursor.height), (Game.Settings.lasersAllowed && Game.Settings.firepower[PlayerVeh.vehId] > 0 ? cursor : cursorLook));
+
+		}
 	}
 
 	//Basic Setup

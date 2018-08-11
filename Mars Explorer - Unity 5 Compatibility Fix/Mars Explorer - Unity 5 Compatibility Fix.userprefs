@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Martian Assets/Scripts/Game/Game.js">
+    <Files>
+      <File FileName="Assets/Martian Assets/Scripts/Game/Settings.js" Line="1851" Column="3" />
+      <File FileName="Assets/Whirld/Editor/WhirldOutBundle.js" Line="108" Column="139" />
+      <File FileName="Assets/Whirld/Editor/WhirldOutScene.js" Line="19" Column="129" />
+      <File FileName="Assets/Martian Assets/Scripts/Lobby/Lobby.js" Line="76" Column="1" />
+      <File FileName="Assets/Martian Assets/Scripts/Game/Game.js" Line="384" Column="12" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

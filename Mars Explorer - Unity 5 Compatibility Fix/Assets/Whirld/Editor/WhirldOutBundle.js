@@ -81,8 +81,8 @@ class WhirldOutBundle extends System.Object {
 					for(var file : String in files) objArr.Add(AssetDatabase.LoadMainAssetAtPath(file));
 					whirldData += "[ab:" + (url == "" ? title : url) + "]\n";
 					var objs : UnityEngine.Object[] = objArr.ToBuiltin(UnityEngine.Object);
-					BuildPipeline.BuildAssetBundle(null, objs, whirldOut.outPath + title, BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.CompleteAssets | BuildAssetBundleOptions.DeterministicAssetBundle);
-					//BuildPipeline.BuildAssetBundles(whirldOut.outPath + title, BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.CompleteAssets | BuildAssetBundleOptions.DeterministicAssetBundle);
+					//BuildPipeline.BuildAssetBundle(null, objs, whirldOut.outPath + title, BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.CompleteAssets | BuildAssetBundleOptions.DeterministicAssetBundle);
+					BuildPipeline.BuildAssetBundles(whirldOut.outPath + title, BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.CompleteAssets | BuildAssetBundleOptions.DeterministicAssetBundle, EditorUserBuildSettings.activeBuildTarget);
 					objArr.Clear();
 
 				}
@@ -91,8 +91,8 @@ class WhirldOutBundle extends System.Object {
 				if(objArr.length > 0) {
 					whirldData += "[ab:Assets.unity3d]\n";
 					objs = objArr.ToBuiltin(UnityEngine.Object);
-					BuildPipeline.BuildAssetBundle(null, objs, whirldOut.outPath + "Assets.unity3d", BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.CompleteAssets);
-					//BuildPipeline.BuildAssetBundles(whirldOut.outPath + "Assets.unity3d", BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.CompleteAssets);
+					//BuildPipeline.BuildAssetBundle(null, objs, whirldOut.outPath + "Assets.unity3d", BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.CompleteAssets);
+					BuildPipeline.BuildAssetBundles(whirldOut.outPath + "Assets.unity3d", BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.CompleteAssets, EditorUserBuildSettings.activeBuildTarget);
 				}
 			}
 
@@ -105,7 +105,7 @@ class WhirldOutBundle extends System.Object {
 		//Build Whirld!
 		whirldData += "[ss]\n";
 		EditorApplication.SaveScene("Assets/Whirld/World.unity");
-		BuildPipeline.BuildPlayer(["Assets/Whirld/World.unity"], whirldOut.outPath + "Whirld.unity3d", BuildTarget.WebPlayer, BuildOptions.BuildAdditionalStreamedScenes);
+		BuildPipeline.BuildPlayer(["Assets/Whirld/World.unity"], whirldOut.outPath + "Whirld.unity3d", EditorUserBuildSettings.activeBuildTarget, BuildOptions.BuildAdditionalStreamedScenes);
 
 		//End Resource Sharing
 		BuildPipeline.PopAssetDependencies();
