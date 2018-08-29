@@ -605,6 +605,7 @@ MonoBehaviour:
   camOffset: 2
   ridePos: {fileID: 0}
   terrainMask:
+    serializedVersion: 2
     m_Bits: 2049
   laserAimer: {fileID: 100004}
   laserAimerLocked: {fileID: 100002}
@@ -617,16 +618,8 @@ MonoBehaviour:
   inputThrottle: 0
   isBot: 0
   ramoSphereObj: {fileID: 100000, guid: ea09902ef0f9845309fd2c84785ba668, type: 2}
-  vehicleColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  vehicleAccent:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
+  vehicleColor: {r: 0, g: 0, b: 0, a: 0}
+  vehicleAccent: {r: 0, g: 0, b: 0, a: 0}
   materialMain: []
   materialAccent: []
 --- !u!1002 &11400001
@@ -657,7 +650,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 11400000}
   m_ViewID:
-    m_ID: 0
+    m_ID: 1
     m_Type: 0
 --- !u!1002 &14800001
 EditorExtensionImpl:

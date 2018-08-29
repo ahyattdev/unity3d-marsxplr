@@ -1587,10 +1587,11 @@ function updatePrefs() {
 		Network.sendRate = 20;
 	}
 	else */
-	if(Game.Settings.networkPhysics != null && Game.Settings.networkPhysics == 2) {
-		Network.sendRate = 10;
-	}
-	else {
+	if (Game.Settings != null) {
+		if(Game.Settings.networkPhysics == 2) {
+			Network.sendRate = 10;
+		}
+	} else {
 		Network.sendRate = 15;
 	}
 
