@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars Explorer - Unity 5 Compatibility Fix", "Assembly-CSharp.csproj", "{71507237-BE31-C553-3EA2-C391D42A7773}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{71507237-BE31-C553-3EA2-C391D42A7773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars Explorer - Unity 5 Compatibility Fix", "Assembly-CSharp-firstpass.csproj", "{A8BF37CE-7682-C2A7-2EEF-01F2B6DF5739}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{A8BF37CE-7682-C2A7-2EEF-01F2B6DF5739}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars Explorer - Unity 5 Compatibility Fix", "Assembly-CSharp-Editor.csproj", "{A05DED9A-F6EE-485E-1393-D556C06ABD53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{A05DED9A-F6EE-485E-1393-D556C06ABD53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -211,7 +211,6 @@ class WhirldIn extends System.Object {
 		threads.Add(thread, "");
 		var url : String = p;
 
-		Debug.Log("" + url);
 		//Download StreamedScene
 		url = GetURL(url);
 		var www : WWW = new WWW (url);
