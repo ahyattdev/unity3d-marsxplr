@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A8BF37CE-7682-C2A7-2EEF-01F2B6DF5739}</ProjectGuid>
+    <ProjectGuid>{64341619-36CE-1594-9B3E-F1D122B89C33}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -257,7 +257,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zip">
- <HintPath>/Users/andrewhyatt/git/unity3d-marsxplr/Mars Explorer - Unity 5 Compatibility Fix/Assets/Ionic.Zip.dll</HintPath>
+ <HintPath>/Users/andrewhyatt/git/unity3d-marsxplr/marsxplr/Assets/Ionic.Zip.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Users/andrewhyatt/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>

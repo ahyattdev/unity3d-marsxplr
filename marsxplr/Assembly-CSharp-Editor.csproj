@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A05DED9A-F6EE-485E-1393-D556C06ABD53}</ProjectGuid>
+    <ProjectGuid>{4E17B407-6503-7284-749D-92F967D36A7D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -54,10 +54,10 @@
      <Compile Include="Assets\Whirlds\Unity Island\Editor\LightmapExport.cs" />
      <Compile Include="Assets\Whirlds\Unity Island\Editor\ObjExporter.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/andrewhyatt/git/unity3d-marsxplr/Mars Explorer - Unity 5 Compatibility Fix/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Users/andrewhyatt/git/unity3d-marsxplr/marsxplr/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>/Users/andrewhyatt/git/unity3d-marsxplr/Mars Explorer - Unity 5 Compatibility Fix/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>/Users/andrewhyatt/git/unity3d-marsxplr/marsxplr/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
@@ -270,7 +270,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zip">
- <HintPath>/Users/andrewhyatt/git/unity3d-marsxplr/Mars Explorer - Unity 5 Compatibility Fix/Assets/Ionic.Zip.dll</HintPath>
+ <HintPath>/Users/andrewhyatt/git/unity3d-marsxplr/marsxplr/Assets/Ionic.Zip.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Users/andrewhyatt/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -293,9 +293,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{A8BF37CE-7682-C2A7-2EEF-01F2B6DF5739}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{64341619-36CE-1594-9B3E-F1D122B89C33}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{71507237-BE31-C553-3EA2-C391D42A7773}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{1531B8CB-7106-B22A-00F7-BDBCA4A914A0}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
