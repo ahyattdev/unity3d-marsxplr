@@ -269,7 +269,7 @@ function OnGUI () {
 			GUI.BringWindowToFront(1);
 		}
 		//else
-		if(outdated == "") {
+		//if(outdated == "") {
 			GUILayout.Window(0,
 				Rect(
 					Screen.width * 0.5 - width / 2 - 50,
@@ -279,8 +279,14 @@ function OnGUI () {
 				MakeWindow,
 				/*(userName == "" ? "Pick a Name" : (Network.isServer ? "Start a Server" : "Join a Game")) +*/ "",
 				"windowChromeless");
-		}
-		else GUILayout.Window(0, Rect(Screen.width * 0.5 - width / 2,lobbyDecor.logoOffset - 20, width, 150), makeWindowUpdate, /* "New Version Available! */ "", "windowChromeless");
+		//}
+
+		// Disable update nag
+		// ”3.0“ is a fundamentally different game
+
+		//else
+		//	GUILayout.Window(0, Rect(Screen.width * 0.5 - width / 2,lobbyDecor.logoOffset - 20, width, 150), makeWindowUpdate, /* "New Version Available! */ "", "windowChromeless");
+
 		GUI.FocusWindow(0);
 
 		if(serverDetails != "" && GuiAnimate != 1 && GUIAlpha != 0 && GameData.errorMessage == "") {
