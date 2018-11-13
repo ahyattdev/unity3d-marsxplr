@@ -1,0 +1,517 @@
+v=3.0
+v2=2.22
+d=0
+n=2
+a=1
+
+s=67.225.180.24:23456
+f=67.225.180.24:50001
+t=67.225.180.24:10735
+
+m=Mars Explorer lives on! 2017 is the year of Syn3h!,http://Syn3h.com
+m2=Meet the Developer,http://AubreyFalconer.com
+m2=Mars Explorer Mobile!,http://marsxplr.com/view-995
+
+adbrxxx=http://ads.adbrite.com/mb/text_group.php?sid=1509409&br=1&dk=776f726b2066726f6d20686f6d655f335f315f776562&col=3&ifr=1&ref=http%3A%2F%2Fdat.marsxplr.com%2Fplay
+
+adsn=http://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1445769979204231&output=html&h=60&slotname=0343803343&w=468&lmt=1272500329&flash=10.0.42&url=http%3A%2F%2Fmarsxplr.com%2Fcontent&dt=1272500330142&shv=r20100414&correlator=1272500330148&frm=0&ga_vid=1676834558.1272500330&ga_sid=1272500330&ga_hid=2144333117&ga_fc=0&u_tz=-420&u_his=7&u_java=1&u_h=900&u_w=1440&u_ah=874&u_aw=1440&u_cd=24&u_nplug=11&u_nmime=100&biw=1440&bih=768&fu=0&ifi=1&dtd=52&xpc=r0oJuuMFBg
+
+w=nme:Freestyle;url:http://papawheely.com/Freestyle/Whirld.utw;featured
+
+
+[ab:MarsAssets.unity3d]
+[ss]
+[rndSkybox:Space]
+[rndFogColor:0.2090639,0,0]
+[rndFogDensity:0.0013]
+[rndAmbientLight:0.6666667,0.4484413,0.4484413,0]
+[rndHaloStrength:1]
+[rndFlareStrength:1]
+
+{Floor;0,-109.1,0;0;1;Texture:#SeaFloor}
+{Sea;0;0;1;Mode:Lava}
+{JumpPoint;-449.4,-1.3,243.7;0;5,5,5;JumpTime:1;JumpRandMin:70;JumpRandMax:100}
+{Base;-228,12,-249;0,15,0;1}
+
+
+w=nme:Lava Racer;url:http://papawheely.com/LavaRacer/Whirld.utw;featured
+
+[ab:MarsAssets.unity3d]
+[ss]
+[rndSkybox:Space]
+[rndFogColor:0.2090639,0,0]
+[rndFogDensity:0.001]
+[rndAmbientLight:1,0.879118,0.8791638,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Base;-846.184,11.224,-235.402;0;1}
+{Sea;0;0;1;Mode:Lava}
+
+w=nme:Foxholes;url:http://papawheely.com/Foxholes/Whirld.utw;featured
+
+[ab:MarsAssets.unity3d]
+[ss]
+[rndSkybox:Space]
+[rndFogColor:0.2090639,0,0]
+[rndFogDensity:0.0015]
+[rndAmbientLight:1,0.879118,0.8791638,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Floor;0,-55.5,0;0;1;Texture:#SeaFloor}
+{JumpPoint;-111.944,0,-96;0;15,15,15;JumpTime:1;JumpRandMin:30;JumpRandMax:60}
+{JumpPoint;-20.44,0,-98.2;0;15,15,15;JumpTime:1;JumpRandMin:30;JumpRandMax:60}
+{Base;-63.933,15,-96.683;0,91.49,0;1}
+{Sea;0;0;1;Mode:Lava}
+
+w=nme:Eric's Maze;url:http://papawheely.com/EricsMaze/Whirld.utw;featured
+
+[ab:MarsAssets.unity3d]
+[ss]
+[rndSkybox:Space]
+[rndFogColor:0.2090639,0,0]
+[rndFogDensity:0.001]
+[rndAmbientLight:1,0.879118,0.8791638,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Sea;0;0;1;Mode:Lava}
+{Base;7.843,7.822,-4.248;0,201.225,0;1}
+
+w=nme:The Dude's Olympus Mons;url:http://papawheely.com/DudesOlympusMons/Whirld.utw?v2;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Solar Sky]
+[Message:Welcome to The Dude's Olympus Mons!]
+[marsxplr:wvis:6200;lspd:247;bugfldr:437;bugflpw:1;]
+[rndFogColor:0.1921569,0,0]
+[rndFogDensity:0.0005]
+[rndAmbientLight:0.2,0.2,0.2,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Base;1724.41,467.98,1947.944;0,200.555,0;1}
+
+w=nme:Fai's Sunken Wastes;url:http://papawheely.com/FaisSunkenWastes/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[message:Welcome to Fai's Sunken Wastes!]
+
+{Base;51.636,116.086,-270.895;0;1}
+{Sea;0;0;1;Mode:Lava}
+{Floor;0,-10.5,0;0;1;Texture:#SeaFloor}
+
+w=nme:Gub's Potholes;url:http://dl.dropbox.com/u/14979672/Potholes/Whirld.utw;featured
+
+LOST
+
+w=nme:Free Forge;url:http://dl.dropbox.com/u/18014258/FreeForge/FreeForge.utw;featured
+
+LOST
+
+w=nme:Sunken Embassy;url:http://dl.dropbox.com/u/18014258/Sunken%20Embassy/Whirld.utw;featured
+
+LOST
+
+w=nme:Eric's MegaMaze;url:http://papawheely.com/EricsMegaMaze/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndFogColor:0.2090639,0,0]
+[rndFogDensity:0.004]
+[rndAmbientLight:1,0.879118,0.8791638,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Sea;2800,0,0;0;1;Mode:Lava}
+{Base;2866.972,33.739,-82.372;0,283.82,0;1}
+{Floor;2800,-110.1,0;0;1;Texture:#SeaFloor}
+{Cube;3358.583,31.888,684.755;359.966,320.542,346.11;212.334,5.43,83.785}
+{Cube;3591.743,32.637,-66.09;0.072,315.759,345.701;200.245,5.43,83.785}
+{Cube;3329.375,34.619,-343.817;348.129,43.243,358.864;86.994,3.534,228.103}
+{Cube;3060.969,34.619,436.815;348.158,50.204,359.403;86.994,3.534,228.103}
+{Cube;3465.176,58.514,-199.002;0,42.073,0;86.062,-2.624,176.702}
+{Cube;3213.49,58.514,563.901;0,49.11,0.0;86.062,-2.624,176.702}
+
+
+w=nme:AbiPan Timeworn Canyon;url:http://dl.dropbox.com/u/14210843/Timeworn%20Canyon/Whirld.utw;featured
+
+LOST
+
+w=nme:GTR's Desert;url:http://papawheely.com/GTRsDesert/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:New Material]
+[marsxplr:wvis:6500;]
+[rndFogColor:0.7568628,0.6509804,0.4666667]
+[rndFogDensity:0.0003]
+[rndAmbientLight:1,0.9580753,0.8509804,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Base;4558.651,391.313,3096.707;0,212,0;1}
+{Sea;2500,50,2500;0;1;Mode:Tropic}
+
+w=nme:Seb's Mars Ruins;url:http://papawheely.com/SebsMarsRuins/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndFogColor:0.02307062,0,0.09411765]
+[rndFogDensity:0.001]
+[rndAmbientLight:0.2784314,0.1211995,0.1211995,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Floor;0,-110,0;0;1;Texture:#4530}
+{Sea;0;0;1;Mode:Lava}
+{Base;-580,234,633.5;0,90,0;1}
+
+w=nme:Dvo's Candy Mountain;url:http://papawheely.com/KingDVOsCandyMountain/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Space]
+[Message:Welcome to King Dvo's Candy Mountain!]
+[rndFogColor:0.02307062,0,0.09411765]
+[rndFogDensity:0.001]
+[rndAmbientLight:0.1960784,0.1960784,0.1960784,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Base;501.867,395.971,701.915;0,180.0,0;1}
+{JumpPoint;-42.622,110.26,236.526;0;5,5,5}
+
+w=nme:Abister's Borderlands;url:http://dl.dropbox.com/u/14210843/Borderlands/Day/Whirld.utw;featured
+
+LOST
+
+w=nme:Gub/Flyman's Dungeon;url:http://dl.dropbox.com/u/14979672/Dungeon1111154/Whirld.utw;featured
+
+LOST
+
+w=nme:Abister's Aftershock;url:http://dl.dropbox.com/u/14210843/The%20Dramatic%20Return%20of%20AFTERSHOCK%21/Whirld.utw;featured
+
+LOST
+
+w=nme:Dogfighter's Dream;url:http://papawheely.com/DudesDogfightersDream/Whirld.utw?v4;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Starry Sky]
+[marsxplr:wvis:6200;lspd:247;bugfldr:437;bugflpw:1;]
+[message:Welcome to TheDude's Dogfighter's Dream World!]
+[rndFogColor:0.07896963,0.1681609,0.254902]
+[rndFogDensity:0.0005]
+[rndAmbientLight:0.2392157,0.2392157,0.2392157,1]
+[rndHaloStrength:1]
+[rndFlareStrength:1]
+
+{Sea;0;0;1;Mode:Tropic}
+{Base;702.718,241.879,-483.065;0,261.8,0;1}
+{Floor;0,-15.1,0;0;1;Texture:#Waterfallback}
+
+w=nme:Scottish Highlands;url:http://papawheely.com/DudesScottishHighlands/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Blue Skybox]
+[message:Welcome to TheDude's Scottish Highlands!]
+[rndFogColor:0,0.03416901,0.1333333]
+[rndFogDensity:0.001]
+[rndAmbientLight:0.7607843,0.7607843,0.7607843,1]
+[rndHaloStrength:1]
+[rndFlareStrength:1]
+
+{Sea;0;0;1;Mode:Tropic}
+{Base;-678.554,30.237,-524.9;0,27.449,0;1}
+{Floor;0,-25.1,0;0;1;Texture:#SeaFloor}
+
+w=nme:AlexNB's Mountain Lake;url:http://dl.dropbox.com/u/18014258/AlexnbMountainLake/Whirld.utw;featured
+
+LOST
+
+w=nme:Eric's CTF;url:http://papawheely.com/EricsCTF/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Mars]
+[Message:Welcome to Eric's Capture The Flag World!]
+[rndFogColor:0.4862745,0.6588236,0.7882353]
+[rndFogDensity:0.001]
+[rndAmbientLight:1,0.879118,0.8791638,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Base;1883.145,13.712,2140.254;0,15.912,0;1}
+
+w=nme:Fai's Atlantis;url:http://papawheely.com/FaisAtlantis/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Skybox]
+[Message:Welcome to Fai's Atlantis!]
+[rndFogColor:0.4823529,0.5921569,0.8392157]
+[rndFogDensity:0.0005]
+[rndAmbientLight:0.2,0.2,0.2,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Cube;1103.859,260.522,1149.587;34.842,0,0;125.37,20,801}
+{Cube;3394.252,260.6,1149.474;34.842,0,0;125.37,20,801}
+{Cube;2263.483,550.083,765.615;0;2125.404,20,115.443}
+{Cube;2263.483,525.536,819.559;0;2125.404,63.36,13.242}
+{Cube;2263.483,525.536,714.66;0;2125.404,63.36,13.242}
+{Cube;2256.092,485.621,765.615;0;2435.584,22.083,127.466}
+{Sea;2042.969,-1,991.459;0;1;Mode:Tropic}
+{Base;1395.899,7.239,1256.906;0;1}
+
+w=nme:Quasar's Citadel;url:http://papawheely.com/QuasarsCitadel/Whirld.utw?v2;featured
+
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Skybox]
+[rndFogColor:0.8965135,0.8692307,1]
+[rndFogDensity:0.0015]
+[rndAmbientLight:0.8991201,0.879118,1,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Cube;618.117,68.522,-681.691;0,90,0;1,4,20}
+{Cube;618.117,68.522,-662.575;0,90,0;1,4,20}
+{Cube;608.584,68.522,-672.144;0;1,4,20}
+{Cube;628.117,68.522,-672.144;0;1,4,20}
+{Cube;618.57,56.485,-672.144;0;20,20,20}
+{Cube;809.769,54.055,672.692;0;20,20,20}
+{Cube;819.316,66.092,672.692;0;1,4,20}
+{Cube;799.783,66.092,672.692;0;1,4,20}
+{Cube;809.316,66.092,682.261;0,90,0;1,4,20}
+{Cube;809.316,66.092,663.145;0,90,0;1,4,20}
+{Cube;-308.282,476.125,261.355;0,90,0;1,4,20}
+{Cube;-308.282,476.125,280.472;0,90,0;1,4,20}
+{Cube;-317.815,476.125,270.902;0;1,4,20}
+{Cube;-298.282,476.125,270.902;0;1,4,20}
+{Cube;-307.829,464.087,270.902;0;20,20,20}
+{Cube;-590.079,150.811,-62.025;0;20,20,20}
+{Cube;-580.532,162.848,-62.025;0;1,4,20}
+{Cube;-600.065,162.848,-62.025;0;1,4,20}
+{Cube;-590.532,162.848,-52.456;0,90,0;1,4,20}
+{Cube;-590.532,162.848,-71.573;0,90,0;1,4,20}
+{Cube;936.914,67.461,107.114;0,90,0;1,4,20}
+{Cube;936.914,67.461,126.23;0,90,0;1,4,20}
+{Cube;927.381,67.461,116.661;0;1,4,20}
+{Cube;946.914,67.461,116.661;0;1,4,20}
+{Cube;937.367,55.423,116.661;0;20,20,20}
+{Sea;0,35,0;0;0.5,0.5,0.5;Mode:Tropic}
+{Base;35.982,95,-15.605;0;1}
+{JumpPoint;10,10,10;0;15,15,15;JumpTime:1;JumpRandMin:70;JumpRandMax:100}
+{JumpPoint;-10,10,-10;0;15,15,15;JumpTime:1;JumpRandMin:70;JumpRandMax:100}
+{Floor;0;0;0.5,0.5,0.5;Texture:#SeaBump}
+
+w=nme:Unity Island;url:http://papawheely.com/UnityIsland/Whirld.utw;featured
+
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox: Low Hanging Dream]
+[rndFogColor:0.2445526,0.2968362,0.3508064]
+[rndFogDensity:0.0015]
+[rndAmbientLight:0.4959792,0.4675517,0.421973,0.51]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Base;-710.728,5.766,-347.034;0;1}
+{Sea;0;0;1;Mode:Tropic}
+{Floor;0,-35.1,0;0;1;Texture:#SeaFloor}
+
+w=nme:Dvo's King Island;url:http://dl.dropbox.com/u/4704910/KingIsland/Whirld.utw;featured
+
+LOST
+
+
+w=nme:Achilles' Adventure Island;url:http://dl.dropbox.com/u/4704910/Island/Whirld.utw;featured
+
+LOST
+
+
+w=nme:Levitashia;url:http://papawheely.com/Levitashia/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Skybox]
+[marsxplr:mmap:0;camo:1;wvis:3500;lsrh:1;lspd:80;lgvt:0.33;bugen:1;tnken:0;hvren:0;jeten:0;]
+[message:Welcome to levitashia! Designed by Aubrey, with inspiration from Teppic's "A*A Bridge Crossing".]
+[floor:0]
+[nofloor:1]
+[rndFogColor:0.7333333,0.8235294,0.9568627]
+[rndFogDensity:0.0015]
+[rndAmbientLight:0.2,0.2,0.2,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Base;0;0,33.499,0;1}
+
+
+w=nme:Seb's Cliff;url:http://dl.dropbox.com/u/4704910/CliffHangers/Whirld.utw;featured
+
+LOST
+
+
+w=nme:Doug's Floating Islands;url:http://dl.dropbox.com/u/4704910/Floating%20Islands/Whirld.utw;featured
+
+LOST
+
+
+w=nme:Achilles' Chess;url:http://papawheely.com/AchillesChess/Whirld.utw;featured
+
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Space]
+[Message:Welcome to Achilles' Chess Board]
+[floor:0]
+[nofloor:1]
+
+{Floor;0,-7,0;0;1;Texture:#water1}
+{Base;-0.061,12.216,-2.215;0,180,0;1}
+{Sea;0,-5,0;0;1;Mode:Tropic}
+
+w=nme:App's Funsplosive Building;url:http://dl.dropbox.com/u/2851663/App%27s%20Building/Whirld.utw;featured
+
+LOST
+
+
+w=nme:Bluetooth's MEGA House;url:http://dl.dropbox.com/u/26821247/MEGAHouse/Whirld.utw;featured
+
+LOST
+
+
+w=nme:Gub's Tubees;url:http://dl.dropbox.com/u/14979672/Tubees/Whirld.utw;featured
+
+LOST
+
+
+w=nme:Gub/Blam UltraWOOPLand;url:http://dl.dropbox.com/u/14979672/UltraWOOPLand/Whirld.utw;featured
+
+LOST
+
+
+w=nme:A-C-E's Dream World;url:http://dl.dropbox.com/u/12957789/The%20Power%20of%20Dreams/WhirldExport6/Whirld.utw;featured
+
+LOST
+
+
+w=nme:Flyclub's Wormhole;url:http://dl.dropbox.com/u/18014258/TheWormhole/Whirld.utw;featured
+
+LOST
+
+
+w=nme:Flyclub's Freefall;url:http://dl.dropbox.com/u/18014258/Freefallz/Whirld.utw;featured
+
+LOST
+
+
+w=nme:Seb's Sky Monster;url:http://papawheely.com/SebsSkyMonster/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Space]
+[nofloor:1]
+[marsxplr:camo:1;lsrh:1;]
+
+{Base;0,55,0;0;1}
+
+
+w=nme:Seb's Sky King;url:http://papawheely.com/SebsSkyKing/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Space]
+[Message:Welcome to Seb's Sky King!]
+[floor:0]
+[nofloor:1]
+[rndFogColor:0.02307062,0,0.09411765]
+[rndFogDensity:0.001]
+[rndAmbientLight:0.1960784,0.1960784,0.1960784,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Base;0,150,-66;0,180,0;1}
+
+
+w=nme:Grae's Ice Base;url:http://dl.dropbox.com/u/4704910/Ice%20Base/Whirld.utw;featured
+
+LOST
+
+
+w=nme:GTR's Ice World;url:http://papawheely.com/GTRsIceWorld/Whirld.utw;featured
+
+[ab:Assets.unity3d]
+[ss]
+[rndSkybox:Skybox]
+[rndFogColor:0.4745098,0.5294118,0.6117647]
+[rndFogDensity:0.0003]
+[rndAmbientLight:0.2,0.2,0.2,1]
+[rndHaloStrength:0.5]
+[rndFlareStrength:1]
+
+{Base;775.542,269.989,2134.36;0,79.432,0;1}
+{Cube;3124.205,13.23,2406.765;25.556,0,0;18.842,2.339,23.336}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+w=nme:Etah's Tribute;url:http://www.geiodo.com/worlds/battle_zone_p3v9.utw
+w=nme:Flyclub's Platforms;url:http://www.geiodo.com/worlds/plats.utw
+w=nme:Iron Forge's Embassy;url:http://www.geiodo.com/worlds/embassy.utw
+w=nme:Jetster's GridCity;url:http://www.geiodo.com/worlds/jetsters_city.utw
+w=nme:Calyx's MegaCity;url:http://www.geiodo.com/worlds/megacity.utw
+w=nme:Calyx's Prison;url:http://www.geiodo.com/worlds/calyx_prison.utw
+w=nme:Neon's Area-42;url:http://www.geiodo.com/worlds/area_42_v1.utw
+w=nme:Central Martian Base;url:http://www.geiodo.com/worlds/central_martian_base.utw
+w=nme:Calyx's Forest Remake;url:http://www.geiodo.com/worlds/calyx_forest_rv4.utw
+w=nme:Calyx's Construction Zone;url:http://www.geiodo.com/worlds/calyx_con_zone_v2.utw
+w=nme:Snares' Nebula;url:http://www.geiodo.com/worlds/snares_nebula_v6.utw
+w=nme:WolfLink's Sky Pillars;url:http://dl.dropbox.com/u/14979672/SkyPillars.utw.txt
+w=nme:Neon / Dvo Ultimatum;url:http://www.geiodo.com/worlds/ultimatum_iv.utw
+w=nme:Neon's Land With No Sun;url:http://www.geiodo.com/worlds/land_with_no_sun.utw
+w=nme:Neon's Mars Fortress;url:http://www.geiodo.com/worlds/martian_fortress_v3.utw
+w=nme:Fort Boxy;url:http://papawheely.com/FortBoxy.utw
+w=nme:Kirby's Battle Room;url:http://www.geiodo.com/worlds/battroom_test9_kf.utw
+w=nme:Kirby's Tower;url:http://www.geiodo.com/worlds/tower_kf.utw
+w=nme:HelloGoodbye's CageMatch;url:http://www.geiodo.com/worlds/cage_match_v11.utw
+w=nme:Kirby's Labyrinth;url:http://www.geiodo.com/worlds/labyrinth_v1_kf.utw
+w=nme:Mr Mars's Pinball;url:http://www.geiodo.com/worlds/pinball_mrmars_final2.utw
+w=nme:Snares' Towers;url:http://www.geiodo.com/worlds/snares_towers_v2.utw
+w=nme:Flyclub's Jet Race;url:http://www.geiodo.com/g-cont/MarsWorlds/JR/jetrace15.utw
+w=nme:Dvo's Stunt Parkway;url:http://www.geiodo.com/worlds/stunt_parkway_v15.utw
+w=nme:Rocket Racing (Easy);url:http://www.geiodo.com/worlds/rrl_easy_track.utw
+w=nme:Rocket Racing (Medium);url:http://www.geiodo.com/worlds/rrl_medium_track.utw
+w=nme:Rocket Racing (Expert);url:http://www.geiodo.com/worlds/rrl_expert_track.utw
+w=nme:Flyclub's Xorb Race;url:http://papawheely.com/xorbracer.utw
+w=nme:Bagel/Calyx's Cano King;url:http://www.geiodo.com/worlds/cbck_v6.utw
+w=nme:Bagel's Skate Park;url:http://www.geiodo.com/worlds/bspst.utw
+w=nme:Deathray's Base;url:http://www.geiodo.com/worlds/mars_base_16_dray.utw
+
+b2=75.147.138.244 Andrew
+b2=93.115.83.250 KruncherFucker
+b2=66.75.99.205 CarbonTech
