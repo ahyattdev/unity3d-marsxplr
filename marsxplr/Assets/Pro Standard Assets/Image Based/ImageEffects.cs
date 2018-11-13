@@ -25,55 +25,20 @@ public class ImageEffects {
 		m_BlitMaterials[0] = new Material (Shader.Find("BlitCopy"));
 		
 		// Blit Multiply
-		m_BlitMaterials[1] = new Material (
-			"Shader \"BlitMultiply\" {\n"	+
-			"	SubShader { Pass {\n" +
-			"		Blend DstColor Zero\n" + 
-			" 		ZTest Always Cull Off ZWrite Off Fog { Mode Off }\n" +
-			"		SetTexture [__RenderTex] { combine texture }"	+
-			"	}}\n"	 +
-			"Fallback Off }"
-		);
+		m_BlitMaterials[1] = new Material (Shader.Find("BlitMultiply"));
+
 		// Blit Multiply 2X
-		m_BlitMaterials[2] = new Material (
-			"Shader \"BlitMultiplyDouble\" {\n"	+
-			"	SubShader { Pass {\n" +
-			"		Blend DstColor SrcColor\n" + 
-			" 		ZTest Always Cull Off ZWrite Off Fog { Mode Off }\n" +
-			"		SetTexture [__RenderTex] { combine texture }"	+
-			"	}}\n"	 +
-			"Fallback Off }"
-		);
+		m_BlitMaterials[2] = new Material (Shader.Find("BlitMultiplyDouble"));
+			
 		// Blit Add
-		m_BlitMaterials[3] = new Material (
-			"Shader \"BlitAdd\" {\n"	+
-			"	SubShader { Pass {\n" +
-			"		Blend One One\n" + 
-			" 		ZTest Always Cull Off ZWrite Off Fog { Mode Off }\n" +
-			"		SetTexture [__RenderTex] { combine texture }"	+
-			"	}}\n"	 +
-			"Fallback Off }"
-		);
+		m_BlitMaterials[3] = new Material (Shader.Find("BlitAdd"));
 		// Blit AddSmooth
-		m_BlitMaterials[4] = new Material (
-			"Shader \"BlitAddSmooth\" {\n"	+
-			"	SubShader { Pass {\n" +
-			"		Blend OneMinusDstColor One\n" + 
-			" 		ZTest Always Cull Off ZWrite Off Fog { Mode Off }\n" +
-			"		SetTexture [__RenderTex] { combine texture }"	+
-			"	}}\n"	 +
-			"Fallback Off }"
-		);
+
+		m_BlitMaterials[4] = new Material (Shader.Find("BlitAddSmooth"));
+
 		// Blit Blend
-		m_BlitMaterials[5] = new Material (
-			"Shader \"BlitBlend\" {\n"	+
-			"	SubShader { Pass {\n" +
-			"		Blend SrcAlpha OneMinusSrcAlpha\n" + 
-			" 		ZTest Always Cull Off ZWrite Off Fog { Mode Off }\n" +
-			"		SetTexture [__RenderTex] { combine texture }"	+
-			"	}}\n"	 +
-			"Fallback Off }"
-		);
+		m_BlitMaterials[5] = new Material (Shader.Find("BlitBlend"));
+
 		for( int i = 0; i < m_BlitMaterials.Length; ++i ) {
 			m_BlitMaterials[i].hideFlags = HideFlags.HideAndDontSave;
 			m_BlitMaterials[i].shader.hideFlags = HideFlags.HideAndDontSave;
