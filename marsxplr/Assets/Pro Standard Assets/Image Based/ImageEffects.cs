@@ -22,14 +22,8 @@ public class ImageEffects {
 			return m_BlitMaterials[index];
 			
 		// Blit Copy Material
-		m_BlitMaterials[0] = new Material (
-			"Shader \"BlitCopy\" {\n"	+
-			"	SubShader { Pass {\n" +
-			" 		ZTest Always Cull Off ZWrite Off Fog { Mode Off }\n" +
-			"		SetTexture [__RenderTex] { combine texture}"	+
-			"	}}\n"	 +
-			"Fallback Off }"
-		);
+		m_BlitMaterials[0] = new Material (Shader.Find("BlitCopy"));
+		
 		// Blit Multiply
 		m_BlitMaterials[1] = new Material (
 			"Shader \"BlitMultiply\" {\n"	+
