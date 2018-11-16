@@ -88,7 +88,10 @@ class adDesc extends System.Object {
 }
 
 function Awake () {
-	QualitySettings.SetQualityLevel(QualityLevel.Fantastic); //Autoalias Starfield
+	// Set quality level to the maximum
+	// The last parameter is for applying expensive (anti-aliasing) changes
+	// This may need to be changed to achieve the desired effect
+	QualitySettings.SetQualityLevel(QualitySettings.names.length - 1, false); //Autoalias Starfield
 	Cursor.lockState = CursorLockMode.None;
 	Application.runInBackground = false;
 	//ServerPings = new Ping[0];

@@ -19,7 +19,7 @@ function Update () {
 	}
 	else if(Application.loadedLevel > 1) {
 		GetComponent.<ParticleEmitter>().worldVelocity.y = -Mathf.Min(Time.timeSinceLevelLoad, 5);
-		if(Time.timeSinceLevelLoad > 7 || QualitySettings.GetQualityLevel() < QualityLevel.Good) GetComponent.<ParticleEmitter>().emit = false;
+		if(Time.timeSinceLevelLoad > 7 || QualitySettings.GetQualityLevel() < 4 /* Good */) GetComponent.<ParticleEmitter>().emit = false;
 		//particleEmitter.emit = true;
 		//gameObject.GetComponent(ParticleAnimator).force.y = -Mathf.Min(Time.timeSinceLevelLoad * .01, .1);
 		/*col = gameObject.GetComponent(ParticleRenderer).material.GetColor("_TintColor");
